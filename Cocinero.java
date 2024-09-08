@@ -21,8 +21,8 @@ public class Cocinero {
     }
 
     // Métodos
-    public void mantenerLimpieza() {
-        System.out.println("El cocinero está manteniendo la limpieza.");
+    public void gestionarCocina() {
+        System.out.println("Cocinero asignado.");
     }
 
     // Getters y Setters

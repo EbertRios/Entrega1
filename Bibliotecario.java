@@ -22,7 +22,7 @@ public class Bibliotecario {
 
     // Métodos
     public void gestionarLibros() {
-        System.out.println("El bibliotecario está gestionando los libros.");
+        System.out.println("Bibliotecario asignado.");
     }
 
     // Getters y Setters

@@ -21,8 +21,8 @@ public class Conserje {
     }
 
     // Métodos
-    public void prepararComida() {
-        System.out.println("El conserje está preparando comida.");
+    public void atendiendoLimpieza() {
+        System.out.println("Conserje asignado.");
     }
 
     // Getters y Setters
