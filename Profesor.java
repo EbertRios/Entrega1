@@ -8,53 +8,12 @@ package com.mycompany.escuelaproyecto;
  *
  * @author user
  */
-import java.util.List;
-
-public class Profesor {
-    private int id;
-    private String nombre;
-    private String apellido;
+class Profesor extends Persona {
     private String especialidad;
-    private List<Alumno> alumnos;
-    private List<Asignatura> asignaturas;
-    private List<Asignacion> asignaciones;
 
-    // Constructor
     public Profesor(int id, String nombre, String apellido, String especialidad) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
+        super(id, nombre, apellido);
         this.especialidad = especialidad;
-    }
-
-    // Métodos
-    public void agregarAsignacion(Asignacion asignacion) {
-        asignaciones.add(asignacion);
-    }
-
-    // Getters y Setters
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
     }
 
     public String getEspecialidad() {
@@ -65,27 +24,13 @@ public class Profesor {
         this.especialidad = especialidad;
     }
 
-    public List<Alumno> getAlumnos() {
-        return alumnos;
+    public void agregarAlumnos() {
+        // Metodo para agregar alumnos a las asignaturas del profesor
+        System.out.println("Agregando alumnos a las asignaturas del profesor " + getNombre());
     }
 
-    public void setAlumnos(List<Alumno> alumnos) {
-        this.alumnos = alumnos;
-    }
-
-    public List<Asignatura> getAsignaturas() {
-        return asignaturas;
-    }
-
-    public void setAsignaturas(List<Asignatura> asignaturas) {
-        this.asignaturas = asignaturas;
-    }
-
-    public List<Asignacion> getAsignaciones() {
-        return asignaciones;
-    }
-
-    public void setAsignaciones(List<Asignacion> asignaciones) {
-        this.asignaciones = asignaciones;
+    public void obtenerAlumnos() {
+        // Metodo para obtener la lista de alumnos del profesor
+        System.out.println("Obteniendo la lista de alumnos del profesor " + getNombre());
     }
 }

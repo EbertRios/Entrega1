@@ -8,21 +8,16 @@ package com.mycompany.escuelaproyecto;
  *
  * @author user
  */
-import java.util.Date;
-
-public class Asignacion {
+class Asignacion {
     private int id;
-    private Date fecha;
-    private Profesor profesor;
+    private String fecha;
 
-    // Constructor
-    public Asignacion(int id, Date fecha, Profesor profesor) {
+    public Asignacion(int id, String fecha) {
         this.id = id;
         this.fecha = fecha;
-        this.profesor = profesor;
     }
 
-    // Getters y Setters
+    // Getters y setters
     public int getId() {
         return id;
     }
@@ -31,19 +26,11 @@ public class Asignacion {
         this.id = id;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
-    }
-
-    public Profesor getProfesor() {
-        return profesor;
-    }
-
-    public void setProfesor(Profesor profesor) {
-        this.profesor = profesor;
     }
 }

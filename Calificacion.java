@@ -8,17 +8,16 @@ package com.mycompany.escuelaproyecto;
  *
  * @author user
  */
-public class Calificacion {
+class Calificacion {
     private int id;
-    private int valor;
+    private double valor;
 
-    // Constructor
-    public Calificacion(int id, int valor) {
+    public Calificacion(int id, double valor) {
         this.id = id;
         this.valor = valor;
     }
 
-    // Getters y Setters
+    // Getters y setters
     public int getId() {
         return id;
     }
@@ -27,11 +26,11 @@ public class Calificacion {
         this.id = id;
     }
 
-    public int getValor() {
+    public double getValor() {
         return valor;
     }
 
-    public void setValor(int valor) {
+    public void setValor(double valor) {
         this.valor = valor;
     }
 }

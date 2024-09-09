@@ -8,56 +8,12 @@ package com.mycompany.escuelaproyecto;
  *
  * @author user
  */
-import java.util.List;
-
-public class Alumno {
-    private int id;
-    private String nombre;
-    private String apellido;
+class Alumno extends Persona {
     private int edad;
-    private List<Asignatura> asignaturas;
-    private List<Calificacion> calificaciones;
 
-    // Constructor
     public Alumno(int id, String nombre, String apellido, int edad) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
+        super(id, nombre, apellido);
         this.edad = edad;
-    }
-
-    // Métodos
-    public List<Calificacion> obtenerCalificaciones() {
-        return calificaciones;
-    }
-
-    public List<Asignatura> obtenerAsignaturas() {
-        return asignaturas;
-    }
-
-    // Getters y Setters
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
     }
 
     public int getEdad() {
@@ -66,5 +22,15 @@ public class Alumno {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public void obtenerCalificaciones() {
+        // Metodo para obtener las calificaciones del alumno
+        System.out.println("Obteniendo calificaciones del alumno " + getNombre());
+    }
+
+    public void obtenerAsignaturas() {
+        // Metodo para obtener las asignaturas del alumno
+        System.out.println("Obteniendo asignaturas del alumno " + getNombre());
     }
 }

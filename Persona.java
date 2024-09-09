@@ -8,15 +8,15 @@ package com.mycompany.escuelaproyecto;
  *
  * @author user
  */
-class Item {
+class Persona {
     private int id;
     private String nombre;
-    private int cantidad;
+    private String apellido;
 
-    public Item(int id, String nombre, int cantidad) {
+    public Persona(int id, String nombre, String apellido) {
         this.id = id;
         this.nombre = nombre;
-        this.cantidad = cantidad;
+        this.apellido = apellido;
     }
 
     // Getters y setters
@@ -36,11 +36,11 @@ class Item {
         this.nombre = nombre;
     }
 
-    public int getCantidad() {
-        return cantidad;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 }

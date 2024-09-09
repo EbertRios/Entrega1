@@ -8,46 +8,29 @@ package com.mycompany.escuelaproyecto;
  *
  * @author user
  */
-import java.util.List;
 
-public class Inventario {
+class Inventario {
     private int id;
     private String nombre;
-    private List<Item> items;
+    private String descripcion;
+    private int cantidad;
+    private String ubicacion;
 
-    // Constructor
-    public Inventario(int id, String nombre) {
+    public Inventario(int id, String nombre, String descripcion, int cantidad, String ubicacion) {
         this.id = id;
         this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.cantidad = cantidad;
+        this.ubicacion = ubicacion;
     }
 
-    // Métodos
     public void agregarItem(Item item) {
-        items.add(item);
+        // Metodo para agregar un ítem al inventario
+        System.out.println("Agregando el ítem " + item.getNombre() + " al inventario " + nombre);
     }
 
     public void eliminarItem(Item item) {
-        items.remove(item);
-    }
-
-    public List<Item> obtenerItems() {
-        return items;
-    }
-
-    // Getters y Setters
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+        // Metodo para eliminar un ítem del inventario
+        System.out.println("Eliminando el ítem " + item.getNombre() + " del inventario " + nombre);
     }
 }
