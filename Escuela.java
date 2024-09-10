@@ -9,10 +9,13 @@ package com.mycompany.escuelaproyecto;
  * @author user
  */
 
+import java.util.List;
+
 class Escuela {
     private int id;
     private String nombre;
     private String direccion;
+    private List<Evento> eventos;
 
     public Escuela(int id, String nombre, String direccion) {
         this.id = id;

@@ -17,6 +17,11 @@ class Asignatura {
         this.nombre = nombre;
     }
 
+    // Método para obtener el nombre de la asignatura
+    public String getNombre() {
+        return nombre;
+    }
+
     public void agregarProfesor(Profesor profesor) {
         // Metodo para agregar un profesor a la asignatura
         System.out.println("Agregando al profesor " + profesor.getNombre() + " a la asignatura " + nombre);
